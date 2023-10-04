@@ -5,12 +5,13 @@
 # Learn more from ready-to-use templates: https://www.gitpod.io/docs/introduction/getting-started/quickstart
 
 tasks:
-  - init: npm install && npm run build
+  - name: Angular Config and Build
+    init: npm install && npm run build
     command: npm run start
 
 # Ports
 ports:
-  - port: 8843
-    onOpen: open-preview
+  - port: 4200
+    onOpen: open-browser
 
 
