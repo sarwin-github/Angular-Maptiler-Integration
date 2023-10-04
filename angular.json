@@ -37,7 +37,7 @@
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "./node_modules/hover.css/css/hover.css",
               "./node_modules/aos/dist/aos.css",
-              "./node_modules/@maptiler/geocoding-control/style.css"
+              "./node_modules/@maptiler/geocoding-control/style.css",
               "src/styles.scss"
             ],
             "scripts": [
