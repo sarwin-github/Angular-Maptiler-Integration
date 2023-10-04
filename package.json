@@ -3,13 +3,11 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "npm run serve:ssr",
-    "build": "npm run build:ssr",
+    "start": "ng serve",
+    "build": "ng build --configuration development",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "dev:ssr": "ng run angular-tailwind-boilerplate:serve-ssr",
-    "serve:ssr": "node dist/angular-tailwind-boilerplate/server/main.js",
-    "build:ssr": "ng build && ng run angular-tailwind-boilerplate:server",
+    "build:prod": "ng build --watch --configuration production",
     "prerender": "ng run angular-tailwind-boilerplate:prerender"
   },
   "private": true,
