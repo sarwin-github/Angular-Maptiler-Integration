@@ -12,20 +12,14 @@ tasks:
   - name: Install project dependencies and start Angular development server
     init: |
       # Install project dependencies
-      npm install
+      npm install && npm run build
     command: |
-      echo Install project dependencies
-
-  - name: Check for build errors
-    init: |
-      # Run Angular Build
-      npm run build 
-      echo Checking for build errors
-    command: |
+      echo Install project dependencies and check for build error
+      
       # Start Angular development server
       npm run start
 
 # Ports to expose for accessing services in the workspace
 ports:
   - port: 3000
-    onOpen: open-preview
+    onOpen: open-browser
