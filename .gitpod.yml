@@ -1,7 +1,7 @@
 # Prebuild tasks to be executed before the workspace starts
 tasks:
   - name: Check if Node.js is installed
-    command: |
+    init: |
       if ! command -v node &> /dev/null; then
         echo "Node.js is not installed. Installing..."
         nvm install 14  # Install Node.js using a specific version or package manager
@@ -10,15 +10,18 @@ tasks:
       fi
 
   - name: Install project dependencies and start Angular development server
-    command: |
+    init: |
       # Install project dependencies
       npm install
+    command: |
+      echo Install project dependencies
 
   - name: Check for build errors
-    command: |
+    init: |
       # Run Angular Build
       npm run build 
-
+      echo Checking for build errors
+    command: |
       # Start Angular development server
       npm run start
 
