@@ -22,4 +22,4 @@ tasks:
 # Ports to expose for accessing services in the workspace
 ports:
   - port: 3000
-    onOpen: open-preview
+    onOpen: open-browser
