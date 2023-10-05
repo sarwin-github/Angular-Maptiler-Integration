@@ -17,7 +17,7 @@ tasks:
   - name: Check for build errors
     command: |
       # Run Angular Build
-      npm run build --configuration production
+      npm run build 
 
       # Start Angular development server
       npm run start
