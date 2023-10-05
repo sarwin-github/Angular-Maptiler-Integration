@@ -20,7 +20,7 @@ tasks:
       npm run build --configuration production
 
       # Start Angular development server
-      ng serve --host 0.0.0.0 --port 3000
+      npm run start
 
 # Ports to expose for accessing services in the workspace
 ports:
